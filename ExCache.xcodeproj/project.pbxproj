@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B51933922C5A6435001B3D26 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51933912C5A6435001B3D26 /* ImageCache.swift */; };
+		B51933942C5A6460001B3D26 /* DiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51933932C5A6460001B3D26 /* DiskCache.swift */; };
 		B5E89C032C4E4126003434AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E89C022C4E4126003434AC /* AppDelegate.swift */; };
 		B5E89C052C4E4126003434AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E89C042C4E4126003434AC /* SceneDelegate.swift */; };
 		B5E89C072C4E4126003434AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E89C062C4E4126003434AC /* ViewController.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B51933912C5A6435001B3D26 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		B51933932C5A6460001B3D26 /* DiskCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskCache.swift; sourceTree = "<group>"; };
 		B5E89BFF2C4E4126003434AC /* ExCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E89C022C4E4126003434AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5E89C042C4E4126003434AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,9 +69,9 @@
 				B5E89C282C4E42D4003434AC /* Application */,
 				B5E89C062C4E4126003434AC /* ViewController.swift */,
 				B5E89C1E2C4E42BF003434AC /* Infrastructure */,
-				B5E89C082C4E4127003434AC /* Assets.xcassets */,
-				B5E89C0A2C4E4127003434AC /* LaunchScreen.storyboard */,
-				B5E89C0D2C4E4127003434AC /* Info.plist */,
+				B5E89C292C4E432F003434AC /* Resources */,
+				B51933912C5A6435001B3D26 /* ImageCache.swift */,
+				B51933932C5A6460001B3D26 /* DiskCache.swift */,
 			);
 			path = ExCache;
 			sourceTree = "<group>";
@@ -98,6 +102,16 @@
 				B5E89C042C4E4126003434AC /* SceneDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		B5E89C292C4E432F003434AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5E89C082C4E4127003434AC /* Assets.xcassets */,
+				B5E89C0A2C4E4127003434AC /* LaunchScreen.storyboard */,
+				B5E89C0D2C4E4127003434AC /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,8 +186,10 @@
 			files = (
 				B5E89C272C4E42BF003434AC /* NetworkConfig.swift in Sources */,
 				B5E89C252C4E42BF003434AC /* NetworkService.swift in Sources */,
+				B51933922C5A6435001B3D26 /* ImageCache.swift in Sources */,
 				B5E89C242C4E42BF003434AC /* DataTransferService.swift in Sources */,
 				B5E89C072C4E4126003434AC /* ViewController.swift in Sources */,
+				B51933942C5A6460001B3D26 /* DiskCache.swift in Sources */,
 				B5E89C032C4E4126003434AC /* AppDelegate.swift in Sources */,
 				B5E89C262C4E42BF003434AC /* Endpoint.swift in Sources */,
 				B5E89C052C4E4126003434AC /* SceneDelegate.swift in Sources */,
@@ -321,7 +337,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ExCache/Info.plist;
+				INFOPLIST_FILE = ExCache/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -351,7 +367,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ExCache/Info.plist;
+				INFOPLIST_FILE = ExCache/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
