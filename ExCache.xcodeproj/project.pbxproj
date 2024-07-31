@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B51933922C5A6435001B3D26 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51933912C5A6435001B3D26 /* ImageCache.swift */; };
 		B51933942C5A6460001B3D26 /* DiskCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51933932C5A6460001B3D26 /* DiskCache.swift */; };
+		B51933962C5A65CD001B3D26 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51933952C5A65CD001B3D26 /* View.swift */; };
+		B51933982C5A6716001B3D26 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51933972C5A6716001B3D26 /* Model.swift */; };
 		B5E89C032C4E4126003434AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E89C022C4E4126003434AC /* AppDelegate.swift */; };
 		B5E89C052C4E4126003434AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E89C042C4E4126003434AC /* SceneDelegate.swift */; };
 		B5E89C072C4E4126003434AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E89C062C4E4126003434AC /* ViewController.swift */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		B51933912C5A6435001B3D26 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		B51933932C5A6460001B3D26 /* DiskCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskCache.swift; sourceTree = "<group>"; };
+		B51933952C5A65CD001B3D26 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		B51933972C5A6716001B3D26 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		B5E89BFF2C4E4126003434AC /* ExCache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExCache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E89C022C4E4126003434AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5E89C042C4E4126003434AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B51933992C5A672B001B3D26 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B51933972C5A6716001B3D26 /* Model.swift */,
+				B51933952C5A65CD001B3D26 /* View.swift */,
+				B5E89C062C4E4126003434AC /* ViewController.swift */,
+				B519339A2C5A6736001B3D26 /* Utils */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B519339A2C5A6736001B3D26 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B51933912C5A6435001B3D26 /* ImageCache.swift */,
+				B51933932C5A6460001B3D26 /* DiskCache.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		B5E89BF62C4E4126003434AC = {
 			isa = PBXGroup;
 			children = (
@@ -67,11 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				B5E89C282C4E42D4003434AC /* Application */,
-				B5E89C062C4E4126003434AC /* ViewController.swift */,
+				B51933992C5A672B001B3D26 /* Presentation */,
 				B5E89C1E2C4E42BF003434AC /* Infrastructure */,
 				B5E89C292C4E432F003434AC /* Resources */,
-				B51933912C5A6435001B3D26 /* ImageCache.swift */,
-				B51933932C5A6460001B3D26 /* DiskCache.swift */,
 			);
 			path = ExCache;
 			sourceTree = "<group>";
@@ -186,11 +208,13 @@
 			files = (
 				B5E89C272C4E42BF003434AC /* NetworkConfig.swift in Sources */,
 				B5E89C252C4E42BF003434AC /* NetworkService.swift in Sources */,
+				B51933962C5A65CD001B3D26 /* View.swift in Sources */,
 				B51933922C5A6435001B3D26 /* ImageCache.swift in Sources */,
 				B5E89C242C4E42BF003434AC /* DataTransferService.swift in Sources */,
 				B5E89C072C4E4126003434AC /* ViewController.swift in Sources */,
 				B51933942C5A6460001B3D26 /* DiskCache.swift in Sources */,
 				B5E89C032C4E4126003434AC /* AppDelegate.swift in Sources */,
+				B51933982C5A6716001B3D26 /* Model.swift in Sources */,
 				B5E89C262C4E42BF003434AC /* Endpoint.swift in Sources */,
 				B5E89C052C4E4126003434AC /* SceneDelegate.swift in Sources */,
 			);
